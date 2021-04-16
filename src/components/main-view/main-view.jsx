@@ -138,7 +138,16 @@ export class MainView extends React.Component {
     return (
       <Container>
         <Router>
-        
+          <Navbar>
+            <Navbar.Brand href="/">Home</Navbar.Brand>
+            <Navbar.Toggle />
+            <Navbar.Collapse className="justify-content-end">
+              <Nav className="justify-content-end">
+                <Nav.Link href={`/users/${user.Username}`}>My Account</Nav.Link>
+              </Nav>
+              <Button onClick={() => this.logOut()} variant="secondary">Log Out</Button>
+            </Navbar.Collapse>
+          </Navbar>
 
           {/* movies */}
           

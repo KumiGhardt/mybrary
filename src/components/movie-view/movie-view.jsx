@@ -2,11 +2,6 @@ import React from 'react';
 import axios from "axios";
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/container";
-import Row from 'react-bootstrap/Row';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import { setMovies } from '../../actions/actions';
 
@@ -14,11 +9,7 @@ export class MovieView extends React.Component {
 
   constructor() {
     super();
-    const localUser = JSON.parse(localStorage.getItem('user'))
-
-    this.state = {
-      user: localUser
-    };
+    this.state = {};
   }
 
   addFavoriteMovie(movie) {
@@ -44,23 +35,10 @@ export class MovieView extends React.Component {
 
   render() {
     const { movie } = this.props;
-    let { user } = this.state;
-
 
     if (!movie) return null;
 
     return (
-<Container>
-      <Navbar>
-      <Navbar.Brand href="/">Home</Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse className="justify-content-end">
-        <Nav className="justify-content-end">
-          <Nav.Link href={`/users/${user.Username}`}>My Account</Nav.Link>
-        </Nav>
-        <Button onClick={() => this.logOut()} variant="secondary">Log Out</Button>
-      </Navbar.Collapse>
-    </Navbar>
      
       <div className="movie-view">
         <img className="movie-poster" src={movie.ImagePath} />
@@ -90,7 +68,7 @@ export class MovieView extends React.Component {
         <Link to={'/'}> <Button variant="dark">Back</Button> </Link>
         <Button variant="info" onClick={() => this.addFavoriteMovie(movie)}>Favorite</Button>
       </div>
-      </Container>
+      
     );
   }
 }

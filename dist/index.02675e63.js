@@ -1060,7 +1060,7 @@ try {
   var _reducersReducers = require('./reducers/reducers');
   var _reducersReducersDefault = _parcelHelpers.interopDefault(_reducersReducers);
   require('./index.scss');
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/index.jsx";
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/index.jsx";
   // create store
   const store = _redux.createStore(_reducersReducersDefault.default, _reduxDevtoolsExtension.devToolsEnhancer());
   // Main component (will eventually use all the others)
@@ -29395,7 +29395,7 @@ try {
   var _genreViewGenreView = require("../genre-view/genre-view");
   var _profileViewProfileView = require("../profile-view/profile-view");
   var _profileViewProfileViewDefault = _parcelHelpers.interopDefault(_profileViewProfileView);
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/main-view/main-view.jsx";
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/main-view/main-view.jsx";
   class MainView extends _reactDefault.default.Component {
     // create component with constructor- the place to initialize a state’s values.
     constructor(props) {
@@ -29470,22 +29470,11 @@ try {
       // destructure
       const {selectedMovie, register} = this.state;
       /*If there is no user, the LoginView is rendered. If there is a user logged in, the user details are *passed as a prop to the LoginView*/
-      // if (!user) return <LoginView onLoggedIn={(user) => this.onLoggedIn(user)} />
-      if (window.location.pathname === '/login') {
-        if (!user) {
-          return (
-            /*#__PURE__*/_reactDefault.default.createElement(_loginViewLoginView.LoginView, {
-              onLoggedIn: user => this.onLoggedIn(user),
-              __self: this,
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 129,
-                columnNumber: 14
-              }
-            })
-          );
-        }
-      }
+      // if(window.location.pathname === '/') {
+      // if(!user) {
+      // return <LoginView onLoggedIn={(user) => this.onLoggedIn(user)} />
+      // }
+      // }
       // Before the movies have been loaded
       if (!movies) return (
         /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -42722,7 +42711,7 @@ try {
   var _visibilityFilterInputVisibilityFilterInput = require('../visibility-filter-input/visibility-filter-input');
   var _visibilityFilterInputVisibilityFilterInputDefault = _parcelHelpers.interopDefault(_visibilityFilterInputVisibilityFilterInput);
   var _movieCardMovieCard = require('../movie-card/movie-card');
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/movies-list/movies-list.jsx";
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/movies-list/movies-list.jsx";
   const mapStateToProps = state => {
     const {visibilityFilter} = state;
     return {
@@ -42807,7 +42796,7 @@ try {
   var _reactBootstrapForm = require('react-bootstrap/Form');
   var _reactBootstrapFormDefault = _parcelHelpers.interopDefault(_reactBootstrapForm);
   var _actionsActions = require('../../actions/actions');
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/visibility-filter-input/visibility-filter-input.jsx";
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/visibility-filter-input/visibility-filter-input.jsx";
   function VisibilityFilterInput(props) {
     return (
       /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrapFormDefault.default.Control, {
@@ -43012,7 +43001,7 @@ try {
   var _reactBootstrapCard = require('react-bootstrap/Card');
   var _reactBootstrapCardDefault = _parcelHelpers.interopDefault(_reactBootstrapCard);
   var _reactRouterDom = require("react-router-dom");
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/movie-card/movie-card.jsx";
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/movie-card/movie-card.jsx";
   class MovieCard extends _reactDefault.default.Component {
     render() {
       const {movie, onClick} = this.props;
@@ -43271,7 +43260,7 @@ try {
   var _reactBootstrapButtonDefault = _parcelHelpers.interopDefault(_reactBootstrapButton);
   var _axios = require('axios');
   var _axiosDefault = _parcelHelpers.interopDefault(_axios);
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/login-view/login-view.jsx", _s = $RefreshSig$();
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/login-view/login-view.jsx", _s = $RefreshSig$();
   function LoginView(props) {
     _s();
     // call the useState() method (imported from React) with an empty string This method returns an array that you destructure (break down into variables)
@@ -43402,7 +43391,7 @@ try {
   var _reactBootstrapButton = require('react-bootstrap/Button');
   var _reactBootstrapButtonDefault = _parcelHelpers.interopDefault(_reactBootstrapButton);
   require('../../actions/actions');
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/movie-view/movie-view.jsx";
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/movie-view/movie-view.jsx";
   class MovieView extends _reactDefault.default.Component {
     constructor() {
       super();
@@ -43647,7 +43636,7 @@ try {
   var _reactBootstrapFormDefault = _parcelHelpers.interopDefault(_reactBootstrapForm);
   var _reactBootstrapButton = require('react-bootstrap/Button');
   var _reactBootstrapButtonDefault = _parcelHelpers.interopDefault(_reactBootstrapButton);
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/registration-view/registration-view.jsx", _s = $RefreshSig$();
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/registration-view/registration-view.jsx", _s = $RefreshSig$();
   function RegistrationView(props) {
     _s();
     // call the useState() method (imported from React) with an empty string This method returns an array that you destructure (break down into variables)
@@ -43839,7 +43828,7 @@ try {
   var _reactBootstrapButtonDefault = _parcelHelpers.interopDefault(_reactBootstrapButton);
   var _reactBootstrapCard = require('react-bootstrap/Card');
   var _reactBootstrapCardDefault = _parcelHelpers.interopDefault(_reactBootstrapCard);
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/director-view/director-view.jsx";
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/director-view/director-view.jsx";
   class DirectorView extends _reactDefault.default.Component {
     constructor() {
       super();
@@ -44123,7 +44112,7 @@ try {
   var _reactBootstrapCardDefault = _parcelHelpers.interopDefault(_reactBootstrapCard);
   var _reactBootstrapButton = require('react-bootstrap/Button');
   var _reactBootstrapButtonDefault = _parcelHelpers.interopDefault(_reactBootstrapButton);
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/genre-view/genre-view.jsx";
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/genre-view/genre-view.jsx";
   class GenreView extends _reactDefault.default.Component {
     constructor(props) {
       super(props);
@@ -44353,7 +44342,7 @@ try {
   var _reactRouterDom = require('react-router-dom');
   var _reactRedux = require('react-redux');
   var _reactBootstrap = require('react-bootstrap');
-  var _jsxFileName = "/Users/kumi/Desktop/mybrary/src/components/profile-view/profile-view.jsx";
+  var _jsxFileName = "/Users/kumi/Codebase/react/mybrary/src/components/profile-view/profile-view.jsx";
   class ProfileView extends _reactDefault.default.Component {
     constructor() {
       super();

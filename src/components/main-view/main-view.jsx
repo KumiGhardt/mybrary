@@ -126,7 +126,7 @@ export class MainView extends React.Component {
 
     if(window.location.pathname === '/') {
       if(!user) {
-      return <LoginView />
+      return <LoginView onLoggedIn={(user) => this.onLoggedIn(user)} />
       }
     }
 

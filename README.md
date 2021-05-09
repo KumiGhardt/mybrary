@@ -15,3 +15,5 @@ This repo in the client-side of my movie index in react
 5. Search for movies based on title
 6. Discover other movies in the genre
 7. Discover other movies by a director
+
+ https://hardty-films.netlify.app/

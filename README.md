@@ -1,7 +1,9 @@
 # myFlix-client aka Mybrary
-This rproject is the client-side of my [movie index api](https://github.com/KumiGhardt/movie-api) in React
+This project is the client-side of my [movie index api](https://github.com/KumiGhardt/movie-api) in React
 
-** This application uses React and Redux to create a movie library that allows the user to create a profile, add favorite movies, edit and delete user details and see all movies, their directprs, genres and descriptions **
+```
+This application uses React and Redux to create a movie library that allows the user to create a profile, add favorite movies, edit and delete user details and see all movies, their directprs, genres and descriptions 
+```
 
 **Features**
 1. Create a user profile
